@@ -3,7 +3,7 @@ public class functions {
     //static int value =20; globle varibale
     static void print2katable(){
     int value=29;
-        for(int i=0;i<=10;i++){
+        for(int i=0;i<=11;i++){
             int ans=2*i;
             System.out.println("->"+ans);
         }
