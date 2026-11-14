@@ -79,6 +79,16 @@ public class Array_stack_implementation {
 
     }
 
+    // traversal using stack
+
+    public  static  void printStack(myStack st){
+        while(!st.checkEmpty()){
+            System.out.println(st.peek() + " ");
+            st.pop();
+
+        }
+    }
+
 
 
     static void main() {
@@ -91,21 +101,23 @@ public class Array_stack_implementation {
         st.push(30);
         System.out.println("size of stack "+ st.getSize());
 
-        st.push((40));
-        st.push(50);
-        System.out.println("size of stack " + st.getSize());
-
-        st.pop();
-        System.out.println("pop stack"+ st.getSize());
-
-        st.pop();
-
-
-        System.out.println("pop stack" +st.peek());
-
-        st.peek();
-        System.out.println("peek of stack");
-        System.out.println(st.checkEmpty());
+        printStack(st);
+//
+//        st.push((40));
+//        st.push(50);
+//        System.out.println("size of stack " + st.getSize());
+//
+//        st.pop();
+//        System.out.println("pop stack"+ st.getSize());
+//
+//        st.pop();
+//
+//
+//        System.out.println("pop stack" +st.peek());
+//
+//        st.peek();
+//        System.out.println("peek of stack");
+//        System.out.println(st.checkEmpty());
 
 
     }
